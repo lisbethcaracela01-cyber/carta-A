@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para ti mi amor ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:radial-gradient(circle,#300024,#050008);
+
+color:white;
+
+font-family:Poppins;
+
+overflow-x:hidden;
+
+}
+
+
+#login{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+h1{
+
+font-family:'Great Vibes';
+
+font-size:75px;
+
+color:#ff9bd5;
+
+text-shadow:0 0 30px pink;
+
+animation:titulo 3s ease-in-out infinite;
+
+}
+
+
+@keyframes titulo{
+
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+
+}
+
+
+input{
+
+margin-top:25px;
+
+padding:15px;
+
+border-radius:25px;
+
+border:2px solid pink;
+
+background:#160015;
+
+color:white;
+
+text-align:center;
+
+}
+
+
+
+button{
+
+margin-top:20px;
+
+padding:15px 50px;
+
+border:0;
+
+border-radius:30px;
+
+background:#ff1980;
+
+color:white;
+
+font-size:18px;
+
+box-shadow:0 0 25px pink;
+
+}
+
+
+
+
+#main{
+
+display:none;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+
+
+.card{
+
+background:linear-gradient(180deg,#ffdbe8,#ffe6ef);
+
+color:#7a1248;
+
+padding:35px;
+
+border-radius:35px;
+
+width:90%;
+
+max-width:800px;
+
+margin:40px auto;
+
+border:2px solid rgba(255,255,255,.5);
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.35),
+0 0 40px rgba(255,105,180,.35);
+
+line-height:1.8;
+
+font-size:16px;
+
+animation:aparecer 1.3s;
+
+}
+
+
+
+.card h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:44px;
+
+color:#d81b60;
+
+text-align:center;
+
+margin-bottom:18px;
+
+text-shadow:0 0 12px rgba(255,255,255,.7);
+
+}
+
+
+@keyframes aparecer{
+
+from{
+
+opacity:0;
+transform:translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+.heart{
+    position:relative;
+    width:220px;
+    margin:40px auto;
+    font-size:180px;
+    text-align:center;
+    animation:latido 1.5s infinite;
+    filter:drop-shadow(0 0 20px #ff4fa3);
+}
+
+.heart span{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family:'Great Vibes',cursive;
+    font-size:55px;
+    color:white;
+    text-shadow:0 0 15px white;
+}
+
+@keyframes latido{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.12);
+    }
+}
+
+.corazon-svg{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin:50px auto;
+
+animation:latidoSVG 1.3s infinite;
+
+filter:drop-shadow(0 0 25px hotpink);
+
+}
+
+.corazon-svg svg{
+
+overflow:visible;
+
+}
+
+@keyframes latidoSVG{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.12);
+
+}
+
+}
+
+.particula{
+
+position:fixed;
+
+top:-20px;
+
+animation:caer linear infinite;
+
+}
+
+@keyframes caer{
+    to{
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+
+
+.foto-romantica{
+    display:flex;
+    justify-content:center;
+    margin:30px auto;
+}
+
+.foto-romantica img{
+
+width:340px;
+max-width:92%;
+aspect-ratio:1/1;
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid #ffd6e7;
+
+box-shadow:
+0 0 20px #ff5ca8,
+0 0 40px #ff8fc4,
+0 0 70px rgba(255,255,255,.4);
+
+animation:flotar 4s ease-in-out infinite;
+
+}
+
+@keyframes flotar{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+.foto-romantica img:hover{
+    transform:scale(1.03);
+}
+
+#frases{
+
+display:none;
+
+height:100vh;
+
+padding:50px;
+
+text-align:center;
+
+}
+
+#frases h1{
+
+font-size:55px;
+
+}
+
+#frases p{
+
+font-size:22px;
+
+margin:35px auto;
+
+max-width:700px;
+
+line-height:1.8;
+
+}
+
+#frase{
+
+font-size:30px;
+
+max-width:700px;
+
+margin:80px auto;
+
+font-family:'Great Vibes';
+
+color:#ffb6d9;
+
+transition:1s;
+
+}
+
+.foto-amor{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.foto-amor img{
+    width:250px;
+    border-radius:20px;
+    animation:acercar 5s infinite alternate;
+    box-shadow:0 0 20px pink;
+}
+
+@keyframes acercar{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.08);
+    }
+}
+
+.teamo{
+    position:absolute;
+    color:#ff4f9a;
+    font-size:14px;
+    font-family:cursive;
+    animation:aparecer 4s linear forwards;
+    pointer-events:none;
+}
+
+@keyframes aparecer{
+
+    0%{
+        opacity:0;
+        transform:scale(.5) translateY(20px);
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+        transform:scale(1.2) translateY(-80px);
+    }
+
+}
+
+#pantallaTiempo{
+    width:100%;
+    min-height:100vh;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.tiempo-box{
+
+    width:90%;
+    max-width:520px;
+
+    padding:28px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 0 35px rgba(255,105,180,.3);
+
+}
+
+.tiempo-box h1{
+
+    color:#ff9dc8;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+    font-family:'Great Vibes',cursive;
+
+}
+
+#cronometro{
+
+    font-size:20px;
+
+    line-height:42px;
+
+    color:white;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+.fraseTiempo{
+
+    font-size:17px;
+
+    line-height:30px;
+
+    color:white;
+
+    font-style:italic;
+
+    margin:20px auto;
+
+    max-width:420px;
+
+}
+
+.nombreAmor{
+
+    color:#ff8ebd;
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+    font-family:'Great Vibes',cursive;
+
+}
+
+.tiempo-box button{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff4f9a;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.tiempo-box button:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* Celulares */
+@media(max-width:600px){
+
+    .tiempo-box{
+        width:95%;
+        padding:22px;
+    }
+
+    .tiempo-box h1{
+        font-size:24px;
+    }
+
+    #cronometro{
+        font-size:18px;
+        line-height:36px;
+    }
+
+    .fraseTiempo{
+        font-size:15px;
+        line-height:26px;
+    }
+
+    .nombreAmor{
+        font-size:20px;
+    }
+
+    .tiempo-box button{
+        font-size:15px;
+        padding:10px 24px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+
+<audio id="music" autoplay loop preload="auto">
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<section id="login">
+
+
+<h1>
+♡ Para ti mi amor ♡
+</h1>
+
+
+<p>
+Tengo algo especial para ti ❤️
+</p>
+
+
+
+<input id="pass" type="password" placeholder="Contraseña">
+
+
+
+<button onclick="entrar()">
+
+Abrir 💗
+
+</button>
+
+
+</section>
+
+
+<section id="frases">
+
+<h1>❤️ Antes de leer esto... ❤️</h1>
+
+<p id="frase"></p>
+
+<button onclick="mostrarTiempo()">
+Continuar ❤️
+</button>
+</section>
+<!-- ========================= -->
+<!-- PANTALLA CRONÓMETRO -->
+<!-- ========================= -->
+
+<section id="pantallaTiempo" class="pantalla" style="display:none;">
+
+    <div class="tiempo-box">
+
+        <h1>❤️ Nuestro tiempo juntos ❤️</h1>
+
+        <div id="cronometro"></div>
+
+        <p class="fraseTiempo">
+            "Cada segundo contigo ha sido un regalo que guardaré por siempre.
+            Gracias por hacer de mi vida un lugar más bonito con tu amor.
+            Eres mi persona favorita, mi paz y mi felicidad. ❤️"
+        </p>
+
+        <h2 class="nombreAmor">
+            ❤️ Andrés Esteban ❤️
+        </h2>
+
+        <button onclick="abrirCarta()">
+            💌 Ver nuestra carta
+        </button>
+
+    </div>
+
+</section>
+
+
+<section id="main">
+
+
+<h1>
+Nuestra historia ❤️
+</h1>
+
+
+
+<div class="corazon-svg">
+
+<svg viewBox="0 0 512 512" width="260" height="260">
+
+<defs>
+
+<linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#ff6fb5"/>
+<stop offset="100%" stop-color="#ff0055"/>
+</linearGradient>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="8" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+</defs>
+
+<path
+fill="url(#grad)"
+filter="url(#glow)"
+d="M256 470
+L220 438
+C90 320
+20 250
+20 160
+20 80
+80 30
+150 30
+200 30
+240 60
+256 90
+272 60
+312 30
+362 30
+432 30
+492 80
+492 160
+492 250
+422 320
+292 438
+Z"/>
+
+<text
+x="256"
+y="250"
+text-anchor="middle"
+font-size="75"
+fill="white"
+font-family="Great Vibes"
+font-weight="normal"
+letter-spacing="8"
+filter="url(#glow)">
+
+A  ♡  L
+
+</text>
+
+
+</svg>
+
+</div>
+<div class="foto-amor">
+    <img src="foto.jpeg" alt="amor">
+</div>
+
+<div class="card">
+
+<h2>✨ ¡Feliz primer mes siendo novios, mi amor! ✨</h2>
+
+<p>
+Hace justo un mes, el día 27, dimos ese paso tan bonito y empezamos oficialmente esta historia juntos… aunque todo comenzó mucho antes: allá por finales de octubre, cuando, sin esperarlo, nuestros caminos se cruzaron por primera vez a través del juego. 🤍
+</p>
+
+<p>
+Desde ese momento, poco a poco te fuiste convirtiendo en alguien indispensable para mí, hasta llegar al día en que me pediste que fuera tu novia. Ese día entendí que todo lo vivido antes solo era la preparación para algo mucho más grande y hermoso.
+</p>
+
+<p>
+No importa que entre Perú y Colombia haya kilómetros, montañas y países enteros que nos separan 🇵🇪✈️🇨🇴, porque desde el principio te sentí muy cerca, como si siempre hubieras estado aquí mismo, a mi lado, aunque todo empezara detrás de una pantalla.
+</p>
+
+<p>
+Quiero decirte cuánto significas para mí. Eres la primera persona en la que pienso al abrir los ojos y la última que recorre mi mente antes de dormir. 🥺
+</p>
+
+<p>
+Me llenas de alegría con cada mensaje, con cada palabra, con tu forma de ser y con todas esas cosas bonitas que solo tú sabes decirme y hacerme sentir.
+</p>
+
+<p>
+Me has enseñado que la distancia solo separa los cuerpos, pero nunca lo que llevamos en el corazón. Al contrario, hace que valoremos mucho más cada instante, cada detalle y cada momento que logramos compartir.
+</p>
+
+<p>
+Te quiero muchísimo: con una fuerza que no tiene fin, con una confianza que se mantiene firme y con un respeto que siempre irá primero, pase lo que pase. Contigo todo cambia para bien; todo se vuelve más bonito, más tranquilo y mucho más especial.
+</p>
+
+<p>
+Me encanta ir conociéndote poco a poco desde aquel octubre, saber cómo piensas, cómo eres y descubrir cosas nuevas cada día que me hacen pensar:
+</p>
+
+<p style="font-family:'Great Vibes',cursive;font-size:45px;color:#ff4f9f;">
+“Qué suerte tan grande tengo de que seas tú.” ❤️
+</p>
+
+<p>
+Sé que esperar requiere paciencia, pero te aseguro que vale completamente la pena. Espero con tantas ganas ese momento en que todos esos kilómetros desaparezcan de golpe; el día en que ya no tengamos que comunicarnos solo por mensajes, cuando pueda tenerte enfrente por fin y darte todos los abrazos, besos y el cariño que hemos estado guardando con tanta ilusión. 🥰
+</p>
+
+<p>
+Mientras llega ese día, prometo estar siempre aquí: cuidando lo nuestro, hablándote siempre con la verdad, queriéndote igual o incluso más que hoy, y haciendo que cada día de espera valga completamente la pena.
+</p>
+
+<p>
+Este primer mes siendo novios es solo el comienzo de todo lo bonito que todavía nos falta vivir, después de habernos encontrado de una forma tan inesperada y especial. Me encantas tal y como eres: con tus detalles, tus bromas, tu forma de ser y todo lo que vamos construyendo juntos paso a paso.
+</p>
+
+<h2>Te quiero muchísimo, mi vida. ❤️</h2>
+
+<p>
+Desde aquel octubre, y mucho más ahora que somos uno solo.
+</p>
+
+<p style="font-family:'Great Vibes',cursive;font-size:48px;color:#ff4f9f;">
+Hoy, mañana y siempre. 💖
+</p>
+
+<h2>¡Feliz primer mes juntos! ❤️</h2>
+
+<p style="font-size:24px;font-family:'Great Vibes',cursive;">
+— Siempre tuya, <strong>LIS 🤍</strong>
+</p>
+
+</div>
+
+
+</section>
+
+
+
+<script>
+
+
+let emojis=["❤️","💗","💕","🌸","✨","🌹"];
+
+
+for(let i=0;i<80;i++){
+
+
+let p=document.createElement("div");
+
+p.className="particula";
+
+p.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+p.style.left=Math.random()*100+"%";
+
+p.style.fontSize=(15+Math.random()*25)+"px";
+
+p.style.animationDuration=(4+Math.random()*8)+"s";
+
+document.body.appendChild(p);
+
+
+}
+
+
+
+
+function entrar(){
+
+    let clave = document.getElementById("pass").value.trim();
+
+    if(clave === "27052026"){
+
+        document.getElementById("login").style.display = "none";
+       document.getElementById("frases").style.display="block";
+
+        const music = document.getElementById("music");
+        music.volume = 0.6;
+
+        music.play().catch(function(error){
+            console.log("El navegador bloqueó la reproducción automática:", error);
+        });
+
+    }else{
+
+        alert("Contraseña incorrecta ❤️");
+
+    }
+
+}
+let frases=[
+
+"Quiero que sepas que cada palabra de esta carta sale de mi corazón ❤️",
+
+"Gracias por llegar a mi vida y hacer mis días mucho más bonitos ✨",
+
+"Aunque exista distancia, hay personas que se sienten cerca siempre 💕",
+
+"Cada momento contigo se vuelve un recuerdo especial 🌸",
+
+"Esta historia recién comienza y espero seguir escribiendo muchos capítulos contigo 💖"
+
+];
+
+
+let numero=0;
+
+
+function cambiarFrase(){
+
+let texto=document.getElementById("frase");
+
+
+texto.style.opacity=0;
+
+
+setTimeout(()=>{
+
+
+texto.innerHTML=frases[numero];
+
+
+texto.style.opacity=1;
+
+
+numero++;
+
+
+if(numero>=frases.length){
+
+numero=0;
+
+}
+
+
+},1000);
+
+
+}
+
+
+
+setInterval(cambiarFrase,4000);
+
+
+cambiarFrase();
+
+function abrirCarta(){
+
+document.getElementById("frases").style.display="none";
+
+document.getElementById("main").style.display="block";
+
+
+fuegos();
+
+
+}
+
+
+
+function fuegos(){
+
+
+for(let i=0;i<80;i++){
+
+
+let f=document.createElement("div");
+
+f.innerHTML="✦";
+
+f.style.position="fixed";
+
+f.style.left="50%";
+
+f.style.top="50%";
+
+f.style.fontSize=(10+Math.random()*25)+"px";
+
+f.style.color=["pink","white","#ff4fa3","#ffd700"][Math.floor(Math.random()*4)];
+
+f.style.zIndex="9999";
+
+
+let x=(Math.random()-0.5)*600;
+
+let y=(Math.random()-0.5)*600;
+
+
+f.animate([
+
+{
+
+transform:"translate(0,0)",
+
+opacity:1
+
+},
+
+{
+
+transform:`translate(${x}px,${y}px)`,
+
+opacity:0
+
+}
+
+],
+
+{
+
+duration:1500,
+
+easing:"ease-out"
+
+});
+
+
+document.body.appendChild(f);
+
+
+setTimeout(()=>{
+
+f.remove();
+
+},1500);
+
+
+}
+
+
+}
+
+
+</script>
+<script>
+
+function crearAmor(){
+
+let foto=document.querySelector(".foto-amor");
+
+let texto=document.createElement("div");
+
+texto.className="teamo";
+
+texto.innerHTML="Te amo ❤️";
+
+let x=Math.random()*220-110;
+let y=Math.random()*180-90;
+
+texto.style.left="calc(50% + "+x+"px)";
+texto.style.top="calc(50% + "+y+"px)";
+
+
+foto.appendChild(texto);
+
+
+setTimeout(()=>{
+texto.remove();
+},4000);
+
+}
+
+
+setInterval(crearAmor,1200);
+
+const fechaInicio = new Date("2026-05-27T00:00:00");
+
+function actualizarCronometro(){
+
+    const inicio = new Date("2026-05-27T00:00:00");
+    const ahora = new Date();
+
+    let meses = (ahora.getFullYear() - inicio.getFullYear()) * 12 +
+                (ahora.getMonth() - inicio.getMonth());
+
+    // Si todavía no llega el mismo día del mes, resta un mes
+    if (ahora.getDate() < inicio.getDate()) {
+        meses--;
+    }
+
+    // Fecha del último aniversario mensual
+    let ultimoAniversario = new Date(inicio);
+    ultimoAniversario.setMonth(inicio.getMonth() + meses);
+
+    let diferencia = ahora - ultimoAniversario;
+
+    let horas = Math.floor(diferencia / (1000 * 60 * 60));
+    diferencia %= (1000 * 60 * 60);
+
+    let minutos = Math.floor(diferencia / (1000 * 60));
+    diferencia %= (1000 * 60);
+
+    let segundos = Math.floor(diferencia / 1000);
+
+    document.getElementById("cronometro").innerHTML = `
+        ❤️ ${meses} mes${meses !== 1 ? "es" : ""}<br>
+        ❤️ ${horas} horas<br>
+        ❤️ ${minutos} minutos<br>
+        ❤️ ${segundos} segundos
+    `;
+}
+
+setInterval(actualizarCronometro,1000);
+
+actualizarCronometro();
+
+function mostrarTiempo(){
+
+    document.getElementById("frases").style.display="none";
+
+    document.getElementById("pantallaTiempo").style.display="flex";
+
+}
+function abrirCarta(){
+
+    document.getElementById("pantallaTiempo").style.display = "none";
+
+    document.getElementById("main").style.display = "block";
+
+    fuegos();
+
+}
+</script>
+
+</body>
+</html>
